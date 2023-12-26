@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu burger</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <header>
+        <div class="burger-menu">
+            <div class="burger-icon" id="burger-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="formulaire.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+    <form id="formulaire">
+        <h1>Contactez-nous</h1>
+        <div class="separation"></div>
+        <div class="corps-formulaire">
+            <div class="gauche">
+                <div class="groupe">
+                    <label for="nom">Votre nom :</label>
+                    <input type="text" name="nom" id="nom">
+                    <label for="prenom">Votre prenom :</label>
+                    <input type="text" name="prenom" id="prenom">
+                    <label for="mail">votre email :</label>
+                    <input type="email" name="mail" id="mail">
+                </div>
+            </div>
+            <div class="droite">
+                <div class="groupe">
+                    <label for="message">Votre message :</label>
+                    <input type="text" name="message" id="message">
+                </div>
+            </div>
+        </div>
+                <div class="pied-formulaire" align="center">
+                    <button type="submit">Envoyer</button>
+                </div>
+        <br>
+        <span id="error"></span>
+        <span id="succes"></span>
+    </form>
+    </main>
+    <script src="rendu.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu burger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />   
+</head>
+<body>
+    <div class="burger-menu">
+        <div class="burger-icon" id="burger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="formulaire.html">Contact</a></li>
+        </ul>
+    </div>
+    <h1>Les Différents Burger</h1>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Big Mac<img src="css/img/big-mac.webp"></div>
+            <div class="swiper-slide">Big Tasty<img src="css/img/BIG_TASTY_1_VIANDE_STAMP_V2.webp"></div>
+            <div class="swiper-slide">CBO<img src="css/img/CBO_V3.webp"></div>
+            <div class="swiper-slide">Croque Mcdo<img src="css/img/croque.webp"></div>
+            <div class="swiper-slide">Filet-O-Fish<img src="css/img/FILETOFISH.webp"></div>
+            <div class="swiper-slide">Mc Chiken<img src="css/img/mcchiken.webp"></div>
+            <div class="swiper-slide">Royal Bacon<img src="css/img/ROYALBACON.webp"></div>
+            <div class="swiper-slide">Royal Cheese<img src="css/img/ROYALCHEESE.webp"></div>
+            <div class="swiper-slide">Royal Deluxe<img src="css/img/ROYALDELUXE.webp"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="burger.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+}); // js dans le html fait expres car marche pas 
+    </script>
+</body>
+</html>
